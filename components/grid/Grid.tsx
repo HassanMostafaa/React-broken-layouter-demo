@@ -47,7 +47,7 @@ export const Grid: React.FunctionComponent<{
             cols: 2,
           },
         }}
-        render={({ item }):any => (
+        render={({ item }) => (
           <CardWithImage description={item.description} title={item.title} />
         )}
       />
