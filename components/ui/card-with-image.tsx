@@ -10,6 +10,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import Image from 'next/image';
+import { ReactNode } from 'react';
 
 interface CardWithImageProps {
   title: string;
@@ -19,13 +20,20 @@ interface CardWithImageProps {
   onCtaClick?: () => void;
 }
 
-export function CardWithImage({
-  title,
-  description,
-  imageUrl,
-  ctaText,
-  onCtaClick,
-}: CardWithImageProps) {
+// export function CardWithImage({
+//   title,
+//   description,
+//   imageUrl,
+//   ctaText,
+//   onCtaClick,
+// }: CardWithImageProps): ReactNode {
+  
+// }
+
+export const CardWithImage:React.FunctionComponent<CardWithImageProps> = ({
+  description,title,ctaText,imageUrl,onCtaClick
+}) => {
+
   return (
     <Card className="overflow-hidden">
       {imageUrl && (

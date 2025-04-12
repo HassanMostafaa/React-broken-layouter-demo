@@ -1,6 +1,8 @@
-import { CardWithImage } from '@/components/ui/card-with-image';
 import { Grid } from '../components/grid/Grid';
-import { cardData, cardWithImageData } from '@/lib/dummy-data';
+import { 
+  cardData,
+  //  cardWithImageData
+} from '@/lib/dummy-data';
 
 export default function Home() {
   return (
@@ -12,10 +14,6 @@ export default function Home() {
 
         <div className="space-y-16">
           <Grid items={cardData} sectionTitle={'Basic Cards'} />
-
-         
-
-          {/* <Grid sectionTitle={'Cards with Images'} items={cardWithImageData} /> */}
         </div>
       </div>
     </main>
